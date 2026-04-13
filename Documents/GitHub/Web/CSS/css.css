@@ -1,5 +1,5 @@
 /* Aquí puedes agregar estilos CSS para personalizar el aspecto de tu página Aspecto o acabado*/
-  <style>
+<style>
         /* Aquí puedes agregar estilos CSS para personalizar el aspecto de tu página */
         body {
             font-family: Arial, sans-serif;
@@ -10,19 +10,29 @@
             font-size: 2.5em;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: #007bff;
+            margin:auto 2em;
         }
         h2 {
-            font-size: 2em;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em; /*rem todo em para botones o cosas internas*/
+            font-family: 'Helvetica','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: #28a745;
         }
         h3 {
             font-size: 1.75em;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: 'Arial','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: #dc3545;
+        }
+        h4 {
+            font-size: 1.5em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #ffc107;
         }
         p {
             font-size: 18px;
+            color: black;
+        }
+        mark {
+            background-color: red;
             color: black;
         }
 </style>
