@@ -1,0 +1,51 @@
+h1 {
+    color: blue;
+    font-size: 2em;
+    border: 0.1em solid black;
+    align-items: center;
+    text-align: center;
+
+}
+h2 {
+    color: green;
+    font-size: 1.5em;
+}
+h3 {
+    color: red;
+    font-size: 1.2em;
+}
+h4 {
+    color: orange;
+    font-size: 1em;
+}
+h5 {
+    color: purple;
+    font-size: 0.9em;
+}
+h6 {
+    color: pink;
+    font-size: 0.9em;
+}
+p {
+    /*color: grey;*/
+    font-size: 1em;
+    text-align: justify;
+    font-weight: bold;
+
+}
+div {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    color: red;
+}
+.capitan {
+    color: darkgreen;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.body {
+    background-color: yellow;
+    padding: 20em;
+}
