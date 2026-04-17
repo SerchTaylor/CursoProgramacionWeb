@@ -1,4 +1,4 @@
-/* CSS per a l'exercici final: Cafès del Món */
+/* Tipo Grafias */
 @font-face {
     font-family: 'Lato',Arial, Helvetica, sans-serif;
     src: local('Lato'), local('Lato-Regular'),
@@ -8,7 +8,7 @@
     font-style: normal;
     font-display: swap;
 }
-/* Estil per al títol */
+
 @font-face {
     font-family: 'Dancing Script';
     src: local('Dancing Script SemiBold'), local('DancingScript-SemiBold'),
@@ -18,11 +18,25 @@
     font-style: normal;
     font-display: swap;
 }
+/* El * */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* El ROOT */
+:root {
+    --color_fondo_primario: rgb(250, 250, 250);
+    --color_secundari: #053617;
+    --color_texto_primario: #333;
+    --color_fons: #fff;
+    --font_primari: 'Dancing Script', sans-serif;
+    --font_secundari: 'Lato', cursive;
+
+}
+
+/* El Resto de CSS*/
+
 h1, h2, p {
     font-family: 'Dancing Script';
 }   
@@ -30,7 +44,7 @@ h1 {
     text-align: center;
     font-size: 10vw;
     position: absolute;
-    color: white;
+    color: var(--color_texto_primario);
     right: 6vw;
     top: 8vw;
         @media(max-width: 900px) {
@@ -62,8 +76,9 @@ nav {
     font-display: swap;
     font-size: 40px;
     font-family: 'Lato', sans-serif;
+    color: white;
     gap: 30px;
-    background-color: #4cb04f;
+    background-color: #053617;
     padding: 10px 0;
 }
 header {
@@ -82,6 +97,10 @@ section {
     gap: 20px;
 }
 aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 
 }
 footer{
@@ -97,3 +116,4 @@ img {
     width: 100%;
     height: auto;
 }
+
