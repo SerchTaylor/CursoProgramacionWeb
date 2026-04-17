@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato'), local('Lato-Regular'),
+     url('../2025-02-25__Botiga_cafes_enunciat/fonts/Lato/Lato-Regular.woff') format('woff'),
+     url('../2025-02-25__Botiga_cafes_enunciat/fonts/Lato/Lato-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Dancing Script';
+    src: local('Dancing Script SemiBold'), local('DancingScript-SemiBold'),
+     url('../2025-02-25__Botiga_cafes_enunciat/fonts/Dancing_Script/DancingScript-SemiBold.woff') format('woff'),
+     url('../2025-02-25__Botiga_cafes_enunciat/fonts/Dancing_Script/DancingScript-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
