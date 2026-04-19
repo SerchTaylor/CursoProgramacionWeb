@@ -30,7 +30,7 @@
     --color_secundari: hsl(142, 83%, 12%);
     --color_texto:black;
     --color_texto_link: white;
-    --color_texto_primario: pink;
+    --color_texto_primario: white;
     --color_fons: #fff;
     --font_primari: 'Dancing Script', sans-serif;
     --font_secundari: 'Lato', cursive;
@@ -49,16 +49,16 @@ h1 {
     color: var(--color_texto_primario);
     right: 6vw;
     top: 8vw;
-        @media(max-width: 900px) {
+        @media(max-width: 888px) {
         right: 10vw;
         font-size: 20vw;
         top: 10vw;
-        color: pink;
+        color: white;
     }
     @media(max-width: 450px) {
         right: 15vw;
         font-size: 15vw;
-        color: white;
+        color: pink;
     }
 
 }
@@ -72,6 +72,12 @@ p {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto%;
+    height: auto;}
 nav {
     display: flex;
     justify-content: center;
@@ -112,6 +118,7 @@ nav {
     }
 }
 header {
+    background-color: yellow;
 }
 main {
     display: flex;
@@ -151,5 +158,3 @@ img {
     width: 100%;
     height: auto;
 }
-
-
