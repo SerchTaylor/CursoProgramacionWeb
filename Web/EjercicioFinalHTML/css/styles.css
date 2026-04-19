@@ -23,6 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 /* El ROOT con sus variables */
 :root {
@@ -71,13 +72,15 @@ p {
     color: black;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
+
 }
 header {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    width: auto%;
-    height: auto;}
+    width: auto;
+    height: auto;
+}
 nav {
     display: flex;
     justify-content: center;
@@ -104,8 +107,8 @@ nav {
             &:hover {
                 border-top: 5px solid var(--color_texto_primario);
                 border-bottom: 5px solid var(--color_texto_primario);
-                border-top: 5px solid yellow;
-                border-bottom: 5px solid yellow;
+                /*border-top: 5px solid yellow;
+                border-bottom: 5px solid yellow;*/
                 color: yellow;
                 border-radius: 5px;
             }
@@ -116,9 +119,6 @@ nav {
             }
         }
     }
-}
-header {
-    background-color: yellow;
 }
 main {
     display: flex;
@@ -140,6 +140,7 @@ aside{
     gap: 20px;
 
 }
+/*sin el espacio asi quito lo blanco*/
 footer{
     position: relative;
     text-align: center;
@@ -147,7 +148,8 @@ footer{
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     background-color: var(--color_fondo_primario);
-    bottom: 10px;
+    display: block;
+    text-indent: 1.5em;
      a{
                 color: var(--color_texto_link);
                 text-decoration: none;
@@ -157,4 +159,14 @@ footer{
 img {
     width: 100%;
     height: auto;
+    display: block;
 }
+html, body {
+  margin: 0;
+  width: 100%;      /* 100% del ancho de la ventana */
+  height: 100%;     /* 100% de la altura de la ventana */
+}
+.pfooter {
+    margin-top: 20px;
+    color: white
+}   
