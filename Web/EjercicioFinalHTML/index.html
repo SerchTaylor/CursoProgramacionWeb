@@ -1,125 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <!-- /*Lorem Ipsum*/ -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- /*Lorem Ipsum*/ -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Meta tags per a informació addicional -->
-    <meta name="author" content="Serch Taylor">
-    <meta name="description" content="Aquest és l'exercici final de HTML, on es posaran en pràctica els coneixements adquirits al llarg del curs.">
-    <meta name="keywords" content="HTML, CSS, exercici final">
-    <meta name="date" content="2025-02-25">
-    <meta name="time" content="10:00">
-    <meta name="location" content="Barcelona, Espanya">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="author" content="Serch Taylor" />
+    <meta
+      name="description"
+      content="Aquest és l'exercici final de HTML, on es posaran en pràctica els coneixements adquirits al llarg del curs."
+    />
+    <meta name="keywords" content="HTML, CSS, exercici final" />
+    <meta name="date" content="2025-02-25" />
+    <meta name="time" content="10:00" />
+    <meta name="location" content="Barcelona, Espanya" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Títol de la pàgina -->
     <title>Exercici Final: Cafès del Món</title>
 
     <!-- Enllaç a la fulla d'estils CSS i favicon -->
-    <link rel="stylesheet" href="../EjercicioFinalHTML/css/styles.css">
-    <link rel="icon" href="../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/favicon.ico" type="image/x-icon">
-
-
-</head>
-<body>
+    <link rel="stylesheet" href="../EjercicioFinalHTML/css/styles.css" />
+    <link
+      rel="icon"
+      href="../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <!-- Contingut de la pàgina -->
-
 
     <!-- header-->
     <header>
-        <h1>Cafès del Món</h1>
+      <h1>Cafès del Món</h1>
 
-       <picture>
-            <!-- Imatge responsive amb diferents resolucions -->
-            <source media="(max-width: 450px)" srcset="../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/index_450px.avif" type="image/webp" sizes="450px">
-            <source media="(max-width: 900px)" srcset="../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/portada_tablet_900px.webp" type="image/webp" sizes="900px">
-            <source srcset="../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/index_2000px.avif" alt="">
-            <img src="" alt="">
-
-        </picture>
-        <!-- Nav have different categories -->
-
+      <picture>
+        <!-- Imatge responsive amb diferents resolucions -->
+        <source
+          media="(max-width: 450px)"
+          srcset="
+            ../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/index_450px.avif
+          "
+          type="image/webp"
+          sizes="450px"
+        />
+        <source
+          media="(max-width: 900px)"
+          srcset="
+            ../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/portada_tablet_900px.webp
+          "
+          type="image/webp"
+          sizes="900px"
+        />
+        <source
+          srcset="
+            ../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/index_2000px.avif
+          "
+          alt=""
+        />
+        <img src="" alt="" />
+      </picture>
+      <!-- Nav have different categories -->
     </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#Variedades">Variedades</a></li>
-                <li><a href="#Store">Tienda</a></li>
-                <li><a href="#About">Sobre Nosotros</a></li>
-            </ul>
-        </nav>
-
-
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#Variedades">Variedades</a></li>
+        <li><a href="#Store">Tienda</a></li>
+        <li><a href="#About">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
     <!-- Min-->
     <main>
-        <section id="Cafes">
-            <img src="../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/taza_arriba.vif.avif" alt="Taza con cafe negro">
-            <h2>Un cafe delicioso para todas las ocasiones  </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores nemo expedita, officia laudantium error neque recusandae amet delectus est cum exercitationem ea iure eveniet quidem quis obcaecati perferendis eos.</p>
-        </section>
-        <section id="Store">
-            <h2>Tienda</h2>
-            <p>Visita la nostra botiga en línia per adquirir els nostres cafès de qualitat. Oferim una àmplia selecció de cafès en gra, mòlts i càpsules, així com accessoris per a preparar el teu cafè perfecte a casa.</p>
-        </section>
-        <section id="About">
-            <h2>Sobre Nosotros</h2>
-            <p>Som apassionats del cafè i ens dediquem a oferir els millors cafès del món als nostres clients. La nostra missió és compartir la nostra passió pel cafè i proporcionar una experiència única a cada tassa.</p>
-        </section>
+        <!-- Primera Seccion -->
+      <section class="texto_fotos texto_derecha">
+        <div>
+          <img
+            src="../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/taza_arriba.vif.avif"
+            alt="Taza con cafe negro"
+          />
+          <div>
+            <h2>Un cafe delicioso para todas las ocasiones</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis dolores nemo expedita, officia laudantium error neque
+              recusandae amet delectus est cum exercitationem ea iure eveniet
+              quidem quis obcaecati perferendis eos.
+            </p>
+          </div>
+        </div>
+      </section>
+<!-- Segunda Seccion -->
+      <section class="texto_fotos texto_izquierda">
+        <div>
+          <h2>Un cafe delicioso para todas las ocasiones</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            dolores nemo expedita, officia laudantium error neque recusandae
+            amet delectus est cum exercitationem ea iure eveniet quidem quis
+            obcaecati perferendis eos.
+          </p>
+          <div>
+            <img
+              src="../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/natural_600x750.avif"
+              alt="Taza con cafe negro"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Tercera Seccion -->
+       <section class="texto_fotos texto_derecha">
+        <div>
+          <video src="../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/assets/Basic_heart_latte_art.mp4" controls muted autoplay loop>
+          </video>
+          </video>
+          <div>
+            <h2>Un cafe delicioso para todas las ocasiones</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis dolores nemo expedita, officia laudantium error neque
+              recusandae amet delectus est cum exercitationem ea iure eveniet
+              quidem quis obcaecati perferendis eos.
+            </p>
+          </div>
+        </div>
+      </section>
+<!-- Quarta Seccion -->
+      <section class="texto_fotos texto_izquierda">
+        <div>
+          <h2>Un cafe delicioso para todas las ocasiones</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            dolores nemo expedita, officia laudantium error neque recusandae
+            amet delectus est cum exercitationem ea iure eveniet quidem quis
+            obcaecati perferendis eos.
+          </p>
+          <div>
+            <img
+              src="../EjercicioFinalHTML/2025-02-25__Botiga_cafes_enunciat/img/grupo-amigos-bebiendo.avif"
+              alt="Taza con cafe negro"
+            />
+          </div>
+        </div>
+      </section>
+ <!-- Quinta Seccion -->     
+<section class="section_opinion">
+    <h2>Nuestros clientes opinan</h2>
 
-        <br>
-        <h2>Main: Exercici Final: Cafès del Món</h2>
-        <p>En aquest exercici final: </p>
+</section>
+
     </main>
+
     <!-- article --
     article
         <h2>Article</h2>
         <p>Aquí podeu afegir contingut rellevant per a l'article.</p>
     </article-->
     <!-- Aside -->
+
     <aside>
-        <br>
-        <h2>Aside</h2>
-        <p>La nostra botiga ofereix una àmplia varietat de cafès de tot el món, des de les terres altes d'Etiòpia fins als cafès robusta de Vietnam. Tots els nostres cafès són seleccionats amb cura per garantir la millor qualitat i sabor.</p>
+      <h2>Aside</h2>
+      <p>
+        La nostra botiga ofereix una àmplia varietat de cafès de tot el món, des
+        de les terres altes d'Etiòpia fins als cafès robusta de Vietnam. Tots
+        els nostres cafès són seleccionats amb cura per garantir la millor
+        qualitat i sabor.
+      </p>
     </aside>
 
     <!-- Footer-->
     <footer>
-        <table>
-            <td>
-            <dt><a href="#home">Inici</a></dt>
-            <dt><a href="#cafes">Cafès</a></dt>
-            <dt><a href="#tienda">Tienda</a></dt>
-            <dt><a href="#contacte">Contacto</a></dt>
-            <dt><a href="#sobre-nosaltres">Sobre Nosotros</a></dt>
-            </td>
-            <td>
-            <dt><a href="#home">Inici</a></dt>
-            <dt><a href="#cafes">Cafès</a></dt>
-            <dt><a href="#tienda">Tienda</a></dt>
-            <dt><a href="#contacte">Contacto</a></dt>
-            <dt><a href="#sobre-nosaltres">Sobre Nosotros</a></dt>
-            </td>
-            <td>
-            <dt><a href="#home">Inici</a></dt>
-            <dt><a href="#cafes">Cafès</a></dt>
-            <dt><a href="#tienda">Tienda</a></dt>
-            <dt><a href="#contacte">Contacto</a></dt>
-            <dt><a href="#sobre-nosaltres">Sobre Nosotros</a></dt>
-            </td>
-            <td>
-            <dt><a href="#home">Inici</a></dt>
-            <dt><a href="#cafes">Cafès</a></dt>
-            <dt><a href="#tienda">Tienda</a></dt>
-            <dt><a href="#contacte">Contacto</a></dt>
-            <dt><a href="#sobre-nosaltres">Sobre Nosotros</a></dt>
-            </td>
-        </table>
-        <p class="pfooter">&copy; 2025 Cafès del Món. Tots els drets reservats.</p>
-        <br>
+        <!-- GRIP -->
+      <br/>
+      <table>
+        <td>
+          <dt><a href="#home">Inici</a></dt>
+          <dt><a href="#cafes">Cafès</a></dt>
+          <dt><a href="#tienda">Tienda</a></dt>
+          <dt><a href="#contacte">Contacto</a></dt>
+          <dt><a href="#sobre-nosaltres">Sobre Nosotros</a></dt>
+        </td>
+        <td>
+          <dt><a href="#home">Inici</a></dt>
+          <dt><a href="#cafes">Cafès</a></dt>
+          <dt><a href="#tienda">Tienda</a></dt>
+          <dt><a href="#contacte">Contacto</a></dt>
+          <dt><a href="#sobre-nosaltres">Sobre Nosotros</a></dt>
+        </td>
+        <td>
+          <dt><a href="#home">Inici</a></dt>
+          <dt><a href="#cafes">Cafès</a></dt>
+          <dt><a href="#tienda">Tienda</a></dt>
+          <dt><a href="#contacte">Contacto</a></dt>
+          <dt><a href="#sobre-nosaltres">Sobre Nosotros</a></dt>
+        </td>
+        <td>
+          <dt><a href="#home">Inici</a></dt>
+          <dt><a href="#cafes">Cafès</a></dt>
+          <dt><a href="#tienda">Tienda</a></dt>
+          <dt><a href="#contacte">Contacto</a></dt>
+          <dt><a href="#sobre-nosaltres">Sobre Nosotros</a></dt>
+        </td>
+      </table>
+      <p class="pfooter">
+        &copy; 2025 Cafès del Món. Tots els drets reservats.
+      </p>
+      <br />
     </footer>
-
-</body>
+  </body>
 </html>
