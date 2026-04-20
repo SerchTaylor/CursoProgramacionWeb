@@ -65,9 +65,7 @@ h1 {
 
 }
 p {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-
+    font-family: 'Lato', sans-serif;    
 }
 header {
     display: block;
@@ -113,14 +111,13 @@ nav {
             }
         }
     }
-}/*
+}
 main {
-    display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
     height: auto;
-}   */
+}
 section {
     display: flex;
     flex-direction: column;
@@ -204,6 +201,17 @@ section > div { /*hijo directo*/
     color:  var(--color_texto_primario);;
 }
 .section_opinion{
-    text-align: center;
-    font-size: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+        h2{
+       /* align-content: center;*/
+        font-size: 3rem; /*1 rem 16px*/
+    }
+    h2{
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    div{
+
+    }
 }
