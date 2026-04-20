@@ -156,7 +156,7 @@ footer{
                 font-size: 1.2em;
             }
 }
-img {
+header img {
     width: 100%;
     height: auto;
     display: block;
@@ -168,5 +168,16 @@ html, body {
 }
 .pfooter {
     margin-top: 20px;
-    color: white
+    color: white;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
 }   
+table {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        justify-content: space-between;
+        display:autofill;
+        gap: 20px;
+}
