@@ -201,8 +201,7 @@ section > div { /*hijo directo*/
     color:  var(--color_texto_primario);;
 }
 .section_opinion{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
         h2{
        /* align-content: center;*/
         font-size: 3rem; /*1 rem 16px*/
@@ -211,7 +210,15 @@ section > div { /*hijo directo*/
         text-align: center;
         font-size: 3.5rem;
     }
-    div{
-
-    }
 }
+.section_opinion > div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            cite{
+                color: red;
+                font-style: italic;
+                font-size: 1.2rem;
+
+            }
+    
+    }
