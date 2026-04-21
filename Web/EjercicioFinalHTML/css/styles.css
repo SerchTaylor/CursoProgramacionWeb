@@ -131,14 +131,13 @@ aside{
 
 }
 /*sin el espacio asi quito lo blanco*/
-footer{
+/*footer{
     position: relative;
     text-align: center;
     color: white;
     font-family: var(--font_secundari);
     font-size: 14px;
     background-color: var(--color_fondo_primario);
-    display: block;
     text-indent: 1.5em;
      a{
                 color: var(--color_texto_link);
@@ -147,6 +146,28 @@ footer{
             }
     h2{
 
+    }
+}*/
+footer{
+    background-color: var(--color_secundari);
+    padding-bottom: 10px;
+}
+footer > div{
+    width: var(--breakpoint_principal);
+    margin: 1rem auto;
+    display: flex;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 4rem;
+    color: var(--color_texto_link);
+    h2{
+        font-family: Lato;
+    }
+    a{
+        color: inherit;
+    }
+    ul{
+        list-style-type: none;
     }
 }
 header img {
@@ -162,9 +183,10 @@ html, body {
 .pfooter {
     margin-top: 20px;
     color: white;
-    align-items: center;
+    text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
+
 }  
 section > div { /*hijo directo*/
         margin: 0 auto;
@@ -212,7 +234,9 @@ section > div { /*hijo directo*/
     h2{
         text-align: center;
         font-size: 3.5rem;
+        margin-bottom: 1rem;
     }
+    padding: 2rem 0;
 }
 .section_opinion > div {
             display: grid;
@@ -225,3 +249,13 @@ section > div { /*hijo directo*/
             }
     
     }
+.aside{
+    size: 30px;
+    text-align: left;
+    width: 200px;
+    height: 200px ;
+}
+.logos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
