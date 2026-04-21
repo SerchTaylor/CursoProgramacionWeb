@@ -150,7 +150,8 @@ aside{
 }*/
 footer{
     background-color: var(--color_secundari);
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 footer > div{
     width: var(--breakpoint_principal);
@@ -161,7 +162,7 @@ footer > div{
     gap: 4rem;
     color: var(--color_texto_link);
     h2{
-        font-family: Lato;
+        font-family: 'Lato';
     }
     a{
         color: inherit;
@@ -184,13 +185,13 @@ html, body {
     margin-top: 20px;
     color: white;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     font-size: 14px;
 
 }  
 section > div { /*hijo directo*/
         margin: 0 auto;
-        width: var(--breakpoint_principal);
+        max-width: var(--breakpoint_principal);
         justify-content: space-between;
         display: flex;
         gap: 20px;
@@ -258,4 +259,14 @@ section > div { /*hijo directo*/
 .logos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+.footer-grid{
+    h2{
+        font-family: var(--font_secundari);
+    }
+    a{
+        font-family: var(--color_texto_link);
+        text-decoration: none;
+    }
+
 }
