@@ -1,0 +1,55 @@
+/* STYLES LIST */
+
+/* Fonts Styles */
+@font-face {
+    font-family: 'Amita';
+    src: local('Amita'), local('Amita'),
+     url('../1Examen/fonts\') format('woff'),
+     url('../1Examen/fonts') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto'),
+     url('../1Examen/fonts') format('woff'),
+     url('../1Examen/fonts') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Reset of the page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* El ROOT with the var */
+:root {
+
+    /* Colours */
+    --color_first:bisque;
+    --color_second: #745c1a;
+    --color_third:#ffe4c488;
+    --color_fourth:#69c0e;
+
+    /* Fonts */
+    --font_primari: 'Amita', sans-serif;
+    --font_secundari: 'Roboto', cursive;
+    --breakpoint_principal: 1200px; 
+
+}
+
+/* Body */
+body{
+    background-color: var(--color_second);
+    h1{
+        text-align: center;
+    }
+}
