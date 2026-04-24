@@ -37,6 +37,12 @@ let saludo1 = "Buenas"
 let saludo2 = "Tardes!!"
 let saludoTotal = saludo1.concat(" ",saludo2)
 let saludoTotal2 = saludo1 + saludo2
-
+let saludoTotal3 = saludo1 + " , " +saludo2
 console.log(saludoTotal)
 console.log(saludoTotal2)
+console.log(saludoTotal3)
+
+let prueba = "a" * 5
+console.log(prueba) // cuidado que a veces hace conversiones
+
+
