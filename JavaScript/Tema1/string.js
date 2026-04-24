@@ -45,4 +45,37 @@ console.log(saludoTotal3)
 let prueba = "a" * 5
 console.log(prueba) // cuidado que a veces hace conversiones
 
+let nom = "           PePe      "
+console.log(nom)
+nom = nom.trim()
+ /* Concatenar nombres */
+
+console.log(nom)
+nom = nom.toLocaleLowerCase()
+console.log(nom)
+
+let nom5 = nom.toLocaleUpperCase()
+console.log(nom5)
+
+const numChars = nom.length
+final = nom.slice(1,numChars)
+
+console.log(final)
+
+let inicial = nom5.slice(0,1)
+console.log(inicial)
+
+let entero = inicial.concat(final)
+console.log(entero)
+
+/* En una linea */
+entero = nom5.slice(0,1) + nom.slice(1,numChars)
+
+console.log(entero)
+
+let newWord = nom.replace("e","i")
+
+console.log(nom.replaceAll("e","i"))
+
+console.log(newWord)
 
