@@ -79,3 +79,12 @@ console.log(nom.replaceAll("e","i"))
 
 console.log(newWord)
 
+let nombrePila = "Ferran"
+let no = nombrePila.length <4
+console.log(no)
+
+if (nombrePila & newWord == false)
+    console.log("asdf")
+else console.log("opiuyiuo")
+
+
