@@ -53,6 +53,12 @@ Sirve para:
 /* VAriables */
 // Var es the old form for create a variable i s'acaba en ;
 var variable = 0 // no se usa
+let num1 = 80
+let num2 = 40
+let suma = num1 + num2
+let potencia = num1**num2
+let raizQ = num1**0.5 
+let resto =num1 % num2 // es el resto de la division y sabemos si es par o impart
 
 let variable2 ="viernes"
 
@@ -65,5 +71,9 @@ const LENGUAJE = 'JavaScript'
 const PI = 3.1416
 
 console.log(variable2)
-
+console.log("hola")
 console.log(LENGUAJE,PI)
+console.log(typeof PI)
+console.log(num1+num2)
+
+console.log(suma,suma, potencia,raizQ,resto)
