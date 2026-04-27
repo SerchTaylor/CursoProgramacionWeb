@@ -120,6 +120,11 @@ productCost = 34.5
 console.log(productCost + sellTaxt );
 
 
+console.log(new Date().toLocaleDateString())
+
+console.log("Hoy es: "+new Date().toLocaleDateString('es-ES', 
+    { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })) // fecha legible
+
 
 
 
