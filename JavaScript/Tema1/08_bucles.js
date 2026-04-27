@@ -11,7 +11,18 @@ while(indicador >=0){
         console.log(indicador+"!!! Se encienden los motores!!! Despegamos!!!");
         indicador = indicador - 1;
     }
-
-
-
 }
+while (true){
+console.log(indicador);
+indicador = indicador -1
+if(indicador == -1){
+    break;
+}
+}
+const claveSereta = "1234" 
+let respuestaUsuario = ""
+do{
+    respuestaUsuario = prompt(" Dime tu clave secreta")
+
+
+}while( respuestaUsuario != claveSereta);
