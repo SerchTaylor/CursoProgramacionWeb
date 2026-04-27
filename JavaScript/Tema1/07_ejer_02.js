@@ -1,49 +1,40 @@
 let diaDiaSemana
-let dia = new Date()
 let diaCorrecto = false
 
-
-while (diaCorrecto == false){
-
-diaDiaSemana = prompt("Dime que numero de dia es?")
-diaDiaSemana = diaDiaSemana.toLocaleLowerCase()
-diaDiaSemana.Date()
-
-switch(diaDiaSemana){
-    
-    case"lunes":
-        alert("Es Lunes")
-        diaCorrecto = true
-        break;
-    case "martes":
-        alert("Hoy es 28")
-        diaCorrecto = true 
-        break;
-    case "miércoles":
-    case "miercoles":
-        alert("Hoy es 29")
-        diaCorrecto = true
-        break;
-    case "jueves":
-        alert("Hoy es 30")
-        diaCorrecto = true
-        break;
-    case "viernes":
-        alert("Hoy es 1")
-        diaCorrecto = true
-        break;
-    case "sábado":
-    case "sabado":
-        alert("Hoy es 22")
-        diaCorrecto = true
-        break;
-    case "domingo":
-        alert("Hoy es 3")
-        diaCorrecto = true
-        break;
-    default:
-        alert("Pon otra cosa")
-        diaCorrecto = false
-        break;
-}
+    while (diaCorrecto == false){
+        diaDiaSemana = prompt("Dime que dia es hoy?")
+        diaDiaSemana = diaDiaSemana.toLocaleLowerCase()
+        switch(diaDiaSemana){ 
+            case"lunes":
+                alert("El "+diaDiaSemana+" es laborable")
+                diaCorrecto = true
+                break;
+            case "martes":
+                alert("El "+diaDiaSemana+" es laborable")
+                diaCorrecto = true 
+                break;
+            case "miércoles":
+            case "miercoles":
+                alert("El "+diaDiaSemana+" es laborable")
+                diaCorrecto = true
+                break;
+            case "jueves":
+                alert("El "+diaDiaSemana+" es laborable")
+                diaCorrecto = true
+                break;
+            case "viernes":
+                alert("El "+diaDiaSemana+" es laborable")
+                diaCorrecto = true
+                break;
+            case "sábado":
+            case "sabado":
+            case "domingo":
+                alert("El "+diaDiaSemana+" es festivo")
+                diaCorrecto = true
+                break;
+            default:
+                alert("Pon un dia correcto de la semana")
+                diaCorrecto = false
+                break;
+    }
 }

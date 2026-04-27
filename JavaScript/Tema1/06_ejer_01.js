@@ -20,6 +20,8 @@ while (diaCorrecto == false){
     diaDiaSemana = prompt("Dime que numero de dia es?")
 
         if (diaDiaSemana == 27 && diaCorrecto == false){
+
+            
             alert("Hoy es "+new Date().toLocaleDateString('es-ES', 
             { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }));
             diaCorrecto = true;
