@@ -19,9 +19,6 @@ let diaCorrecto = false
                 diaCorrecto = true
                 break;
             case "jueves":
-                alert("El "+diaDiaSemana+" es laborable")
-                diaCorrecto = true
-                break;
             case "viernes":
                 alert("El "+diaDiaSemana+" es laborable")
                 diaCorrecto = true
