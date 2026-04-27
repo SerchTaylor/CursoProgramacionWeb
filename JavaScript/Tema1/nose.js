@@ -77,3 +77,21 @@ console.log(typeof PI)
 console.log(num1+num2)
 
 console.log(suma,suma, potencia,raizQ,resto)
+
+console.log("tocate los huevos");
+
+
+console.log(typeof variable2);
+
+variable = "nose"
+
+console.log(variable);
+let saludo = "Buenas" + "Tades"
+
+console.log("2" + 1);
+
+
+let age = 29
+let overAge = 18
+console.log(age >= overAge, age<=overAge, age == overAge );
+
