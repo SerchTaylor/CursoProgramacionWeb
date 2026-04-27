@@ -94,4 +94,32 @@ console.log("2" + 1);
 let age = 29
 let overAge = 18
 console.log(age >= overAge, age<=overAge, age == overAge );
+let nom  = "Serch"
+let saludar = `buenas tardes ${nom} !`
+console.log(saludar);
+let age2 ="25"
+
+let productCost ="25"
+let sellTaxt = 1.2
+console.log(productCost + sellTaxt );
+
+// Convertir tipos de datos cast
+
+console.log(typeof productCost);
+
+productCost = parseInt(productCost)
+
+console.log(typeof productCost);
+
+productCost = "34.5"
+
+productCost = parseFloat(productCost)
+console.log(productCost + sellTaxt );
+
+productCost = 34.5
+console.log(productCost + sellTaxt );
+
+
+
+
 
