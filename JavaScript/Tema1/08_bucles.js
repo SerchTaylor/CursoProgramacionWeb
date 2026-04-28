@@ -22,9 +22,17 @@ for (let i=0;i<palabra3.length;i++){
 }
 console.log("En total son: "+contador+" \""+letras+"\".");
 
+
+
+
+
+console.log(contador2);
+
+
+
 // For1
 
-for(fruta of arrayFrutas){
+for(let fruta of arrayFrutas){
 
     console.log(fruta);
 
@@ -35,19 +43,14 @@ for(fruta of arrayFrutas){
 let palabra1 ="Abugkhguyueqasgfhhdtrsaaaasacadabra"
 let palabra2 = palabra1.toLocaleLowerCase();
 let contador1 = 0
-for (letra of palabra2){
+for (letras of palabra2){
 
-    if (letra =="a"){
+    if (letras =="a"){
         contador1 = contador1 +1
     }
 }
-console.log("En total son: "+contador1+" \""+letra+"\".");
+console.log("En total son: "+contador1+" \""+letras+"\".")
 
-
-
-for (letra of palabra){
-    console.log(letra);
-}
 
 
 let indicador = 10
@@ -61,6 +64,27 @@ while(indicador >=0){
     }
 }
 /*
+export function mostrarMenu() {
+    console.log("===============");
+    console.log("   MENÚ APP");
+    console.log("===============");
+    console.log("1. Ver frutas");
+    console.log("2. Agregar fruta");
+    console.log("3. Eliminar fruta");
+    console.log("4. Salir");
+    console.log("===============");
+}
+
+mostrarMenu();
+
+let opcion = process.stdout.write("Elige una opción: ");
+
+process.stdin.on("data", (data) => {
+    const opcion = data.toString().trim();
+
+    console.log("Elegiste:", opcion);
+})
+
 while (true){
 console.log(indicador);
 indicador = indicador -1
