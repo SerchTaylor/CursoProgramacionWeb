@@ -28,4 +28,5 @@ do{
 
 
 }while( respuestaUsuario != claveSereta);
+
 alert("Has entrado en la base Oculta")
