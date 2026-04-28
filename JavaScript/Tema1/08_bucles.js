@@ -1,6 +1,14 @@
+// For
 for(i=0;i<=10;i++){
     console.log("Número "+i)
 }
+
+
+// For1
+
+
+
+// For2
 
 let indicador = 10
 while(indicador >=0){
