@@ -36,3 +36,4 @@ while(num1!=11){
     console.log(tabla+" por "+num1+" es "+resul)
     num1= num1 + 1
 }
+

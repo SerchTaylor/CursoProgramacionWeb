@@ -54,6 +54,7 @@ console.log(nom)
 nom = nom.toLocaleLowerCase()
 console.log(nom)
 
+
 let nom5 = nom.toLocaleUpperCase()
 console.log(nom5)
 
@@ -91,3 +92,29 @@ else console.log("opiuyiuo")
 let num2= 12334124987102364018923864091236740981234n // la n es para indicar que es num grande
 let num3 = 9901823740912834091283741928374019234235n
 console.log(num2 == num3);
+
+
+
+let saludo = "hola"
+
+{
+let saludo = "Buenas tardes"
+}
+console.log(saludo);
+
+
+{
+    let despedida ="Adios"
+    console.log(despedida);
+}
+
+
+//console.log(despedida);
+
+
+{
+    var numero = 1
+    console.log(numero);
+}
+
+console.log(numero);
