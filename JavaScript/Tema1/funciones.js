@@ -46,5 +46,36 @@ let sumar4 = (num1,num2) => num1+num2
 
 console.log(sumar4(2,6));
 
+const frutas=['naranja','fresa','cereza','pomelo']
+
+frutas.forEach(fruta=>{
+    console.log(fruta.toLocaleUpperCase());
+})
 
 
+//valores por defecto
+
+dividir(3,4)
+dividir(8)
+
+function dividir(num1, num2=2){
+    console.log(num1 / num2);
+}
+console.log(nombreCompleto("Anna","Pou","Garcia"));
+console.log("Peter","Parker");
+
+function nombreCompleto (nombre, apellido1, apellido2=""){
+    return `${nombre} ${apellido1} ${apellido2}`
+}
+
+
+sumar5(1,2)
+
+sumar5 (2,3,5,6,10,15)
+sumar5("Caperucita","Roja")
+
+
+//operador spread
+function sumar5 (...nums){
+    console.log(nums);
+}

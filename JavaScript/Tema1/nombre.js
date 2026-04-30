@@ -19,32 +19,65 @@ function NombreCorrecto(nom){
     nom1= nom.toLocaleLowerCase()
 
 
-    if (nom1.includes("de") || nom1.includes("de los") || nom1.includes("los") ){
+    if (nom1.includes(" ")){
         nom2= nom1
-        console.log(nom2);
-        
-        //nombre
-        inicial = nom1.slice(0,1)
-        inicial = inicial.toLocaleUpperCase()
-        console.log(inicial);
-        for (let x=0;x<nom1.length;x++){ 
+            for (let x=0;x<nom1.length;x++){ 
             if ((nom1[x] == " ")){
                 espacio = x
             }
         }
-        for (let i=nom1.length;i<0;i--){ 
-            if ((nom1[i] == " ")){
-                espacio = i
+
+
+        console.log(espacio);
+        //Nombre
+
+        console.log(nom1);
+
+        //nombre
+
+        inicial = nom1.slice(0,1)
+        inicial = inicial.toLocaleUpperCase()
+        final = nom1.slice(1,espacio)
+
+        console.log(inicial)
+        console.log(final);
+
+        //apellido
+        apellido = nom1.slice(espacio+1, numChars)
+
+
+        inicial2 = nom1.slice(espacio+1,espacio+2)
+        inicial2= inicial2.toLocaleUpperCase()
+
+
+        final2 = apellido.slice(2,apellido.length)
+        
+        console.log(inicial2)
+        console.log(final2)
+
+        //Se concatenan nombre y apellido
+        entero = inicial.concat(final)
+        entero2= inicial2.concat(final2)
+
+        //se suma un espacio y se muestra
+        nom1 = entero +" "+ entero2
+        console.log(nom1)
+
+    }else if (nom2.includes("de los")){
+            for (let x=0;x<nom2.length;x++){ 
+            if ((nom1[x] == "d")){
+                espacio = x
             }
-        }
-        if (nom2.includes("de")){
+        }  
             //Nombre
+            console.log(espacio);
             inicial = nom1.slice(0,1)
             inicial = inicial.toLocaleUpperCase()
-            final = nom1.slice(1,espacio-3)
+            final = nom1.slice(1,espacio)
             console.log(final);
-            entero = inicial.concat(final," De ")
+            entero = inicial.concat(final," De Los")
             console.log(entero);
+
 
         }else if (nom2.includes("del")){
             //Nombre
@@ -55,26 +88,45 @@ function NombreCorrecto(nom){
             entero = inicial.concat(final," Del ")
             console.log(entero);
         }
-        else if (nom2.includes("de los")){
-                        //Nombre
+
+        else if (nom2.includes("de")){
+            for (let x=0;x<nom2.length;x++){ 
+            if ((nom1[x] == "d")){
+                espacio = x
+            }
+        }  
+            //Nombre
+            console.log(espacio);
             inicial = nom1.slice(0,1)
             inicial = inicial.toLocaleUpperCase()
-            final = nom1.slice(1,espacio-4)
+            final = nom1.slice(1,espacio)
             console.log(final);
-            entero = inicial.concat(final," De Los ")
+            entero = inicial.concat(final," De ")
             console.log(entero);
         }
 
+    }
 
-        }
 
         
     
     
     
-
+function nom2(nom){  
+    let nom1 = nom
+    let nom2 = []
+    let espacio = 0
+    let numChars = nom.length
+    let apellido = ""
+    let inicial = ""
+    let inicial2 = ""
+    let entero = ""
+    let entero2 = ""
+    let final = ""
+    let final2 =""
+    
     // casos con if NOT include " "
-    else if ( nom1.includes(" ")){
+   if ( nom1.includes(" ")){
             for (let x=0;x<nom1.length;x++){ 
             if ((nom1[x] == " ")){
                 espacio = x
@@ -140,4 +192,3 @@ function NombreCorrecto(nom){
 
 }
 NombreCorrecto(nom);
-;
