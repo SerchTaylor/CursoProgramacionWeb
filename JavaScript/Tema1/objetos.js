@@ -37,13 +37,15 @@ const listaAlumnos =[
 
 ]
 
-// JSON
+// Sintaxis JSON
 
 let objeto2 = {
     "nombre" : "Serch",
     "apellido" : "Taylor",
     "edad":46,
     "ciudad":"Barcelona",
-    "email": "nose@gmail.com"
+    "email": "nose@gmail.com",
+
+    // NO SE HACE ->"saludar" : `function (){return("Hola")}` <- NO SE HACE
 
 }
