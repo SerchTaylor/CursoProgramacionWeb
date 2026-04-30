@@ -11,6 +11,7 @@ let array2 =["Manuel","",28,"Badalona","nose@gmail.com"]
 let objeto1 ={
     nombre : "Serch",
     apellido : "Taylor",
+    "nombre completo":"Serch Taylor",
     edad:"46",
     ciudad:"Barcelona",
     email: "nose@gmail.com",
@@ -28,6 +29,9 @@ console.log(objeto1.saludar());
 console.log(objeto1.despedir())
 objeto1.caminar()
 console.log(objeto1.caminar);
+
+console.log(objeto1["nombre completo"]);
+
 
 const listaAlumnos =[
     {nombre:"Ferran", apellido:"Spiderman",ciudad:"Barcelona"},
