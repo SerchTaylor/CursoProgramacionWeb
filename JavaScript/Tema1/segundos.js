@@ -13,6 +13,7 @@ let dia = 24 * hora;
 let set = 7 * dia;
 let mes = 4 * set
 let a = 365 * dia // no se cuenta bisiesto
+let tri = 3 *a
 let lu = 5 * a
 let de = 2 * lu
 let ce = 100 * a
@@ -34,6 +35,11 @@ resto = cifra % de
 
 let lustro = Math.round( resto / lu)
 resto = resto % lu
+
+//trienio
+let trienio = Math.round( resto / tri)
+resto = resto % tri
+
 
 // any
 
@@ -68,6 +74,7 @@ console.log(milenio, "milenio");
 console.log(siglo, "siglos");
 console.log(decada, "decadas");
 console.log(lustro, "lustro");
+console.log(trienio,"tienio");
 console.log(any, "any");
 console.log(mesos, "mesos");
 console.log(setmanes, "setmanes");
