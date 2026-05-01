@@ -1,11 +1,12 @@
 //nombre mal escrito
-let nom = "serch de los taylor"
+let nom = "serch de los Taylor"
 
 function NombreCorrecto(nom){
     let nom1 = nom
     let espacio = 0
-    let numChars = nom.length
     let apellido = ""
+    let apellido2 = ""
+    let numChars = nom.length
     let inicial = ""
     let inicial2 = ""
     let entero = ""
@@ -18,105 +19,133 @@ function NombreCorrecto(nom){
     nom1= nom.toLocaleLowerCase()
 
 
-    if (nom1.includes("de los")){
+    if (nom1.includes(" de los ")){
             for (let x=0;x<nom1.length;x++){ 
             if ((nom1[x] == "d")){
                 espacio = x
             }
         }  
+
             //Nombre
-            console.log(espacio);
+
             inicial = nom1.slice(0,1)
             inicial = inicial.toLocaleUpperCase()
             final = nom1.slice(1,espacio)
-            console.log(final);
             entero = inicial.concat(final," De Los ")
-            console.log(entero);
 
             //Apellido
-            apellido = nom1.slice(espacio+7, espacio+8)
+
+            apellido = nom1.slice(espacio+7,espacio+8)
+
+            apellido2 = nom1.slice(espacio+8,nom1.length)
             inicial2= apellido.toLocaleUpperCase()
-            final2 = apellido.slice(espacio+9,nom1.length)
-            console.log(inicial2)
-            console.log(final2)
+            final2 = apellido2
+           
 
         //Se concatenan nombre y apellido
-        entero2= inicial2.concat(final2)
+         entero2=inicial2 + final2
 
         //se suma un espacio y se muestra
         nom1 = entero + entero2
         console.log(nom1)
 
 
-        }else if (nom2.includes("del")){
+        }else if (nom1.includes(" del ")){
+                        for (let x=0;x<nom1.length;x++){ 
+            if ((nom1[x] == "d")){
+                espacio = x
+            }
+        } 
+
             //Nombre
+            console.log(espacio);
             inicial = nom1.slice(0,1)
             inicial = inicial.toLocaleUpperCase()
-            final = nom1.slice(1,espacio-4)
-            console.log(final);
+            final = nom1.slice(1,espacio)
             entero = inicial.concat(final," Del ")
-            console.log(entero);
+
+
+            //Apellido
+
+            apellido = nom1.slice(espacio+3,espacio+4)
+            apellido2 = nom1.slice(espacio+4,nom1.length)
+            inicial2= apellido.toLocaleUpperCase()
+            final2 = apellido2
+            entero2=inicial2 + final2
+
+        //Se concatenan nombre y apellido
+        entero2= inicial2.concat(final2)
+
+        //se suma un espacio y se muestra
+        nom1 = entero2
+        console.log(nom1)
+
+
         }
 
-        else if (nom2.includes("de")){
+        else if (nom1.includes(" de ")){
             for (let x=0;x<nom1.length;x++){ 
             if ((nom1[x] == "d")){
                 espacio = x
             }
         }  
             //Nombre
-            console.log(espacio);
             inicial = nom1.slice(0,1)
             inicial = inicial.toLocaleUpperCase()
             final = nom1.slice(1,espacio)
-            console.log(final);
             entero = inicial.concat(final," De ")
-            console.log(entero);
+
+                        
+            //Apellido
+
+            apellido = nom1.slice(espacio+3,espacio+4)
+            apellido2 = nom1.slice(espacio+4,nom1.length)
+            inicial2= apellido.toLocaleUpperCase()
+            final2 = apellido2
+
+        //Se concatenan nombre y apellido
+        entero2= inicial2.concat(final2)
+
+        //se suma un espacio y se muestra
+        nom1 = entero.concat(final2)
+        console.log(nom1)
+
         }
+
+        //nombre compuesto de aqui hacia el final funciona
         else if(nom1.includes(" ")){
             for (let x=0;x<nom1.length;x++){ 
             if ((nom1[x] == " ")){
                 espacio = x
             }
         }
-        console.log(espacio);
-        //Nombre
+            //Nombre
+            inicial = nom1.slice(0,1)
+            inicial = inicial.toLocaleUpperCase()
+            final = nom1.slice(1,espacio)
+            entero = inicial.concat(final," ")
+            console.log(entero );
+                        
+            //Apellido
 
-        console.log(nom1);
+            apellido = nom1.slice(espacio+1,espacio+2)
+            apellido2 = nom1.slice(espacio+2,nom1.length)
+            inicial2= apellido.toLocaleUpperCase()
+            final2 = inicial2.concat(apellido2)
 
-        //nombre
-
-        inicial = nom1.slice(0,1)
-        inicial = inicial.toLocaleUpperCase()
-        final = nom1.slice(1,espacio)
-
-        console.log(inicial)
-        console.log(final);
-
-        //apellido
-        apellido = nom1.slice(espacio+1, numChars)
-
-
-        inicial2 = nom1.slice(espacio+1,espacio+2)
-        inicial2= inicial2.toLocaleUpperCase()
-
-
-        final2 = apellido.slice(2,apellido.length)
-        
-        console.log(inicial2)
-        console.log(final2)
 
         //Se concatenan nombre y apellido
-        entero = inicial.concat(final)
-        entero2= inicial2.concat(final2)
-
-        //se suma un espacio y se muestra
-        nom1 = entero +" "+ entero2
+        nom1 = entero.concat(final2)
         console.log(nom1)
 
     }
+    // Nombre sin ser compuesto
     else{
-        console.log("No has puesto ningun nombre");
+            inicial = nom1.slice(0,1)
+            inicial = inicial.toLocaleUpperCase()
+            final = nom1.slice(1,nom1.length)
+            entero=inicial.concat(final)
+            console.log(entero);
     }
 }
 
