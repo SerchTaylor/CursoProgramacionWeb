@@ -8,6 +8,9 @@ let array2 =["Manuel","",28,"Badalona","nose@gmail.com"]
 
 // Objetos
 
+const objeto4 ={}
+const noSe= objeto1()
+
 let objeto1 ={
     nombre : "Serch",
     apellido : "Taylor",

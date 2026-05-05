@@ -1,12 +1,10 @@
 //nombre mal escrito
 let nom = "serch de los Taylor"
 
-function NombreCorrecto(nom){
     let nom1 = nom
     let espacio = 0
     let apellido = ""
     let apellido2 = ""
-    let numChars = nom.length
     let inicial = ""
     let inicial2 = ""
     let entero = ""
@@ -147,7 +145,3 @@ function NombreCorrecto(nom){
             entero=inicial.concat(final)
             console.log(entero);
     }
-}
-
-
-NombreCorrecto(nom);

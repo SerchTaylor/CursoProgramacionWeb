@@ -1,0 +1,43 @@
+
+/* Root hago un reset del root*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Le pongo margen derecho y en el top al toda la web desde el body*/
+#body{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+/* Controlo que sea todo en numeros y lo alineo con un margen derecho 
+    y un margen en la derecha para que sea un poco mas estiloso y aplico cosas */
+.parentesis{
+    list-style-type: lower-alpha;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+
+
+}
+/* Le pongo la misma familia de letra al H1 y H2*/
+h1, h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Utilizo una classe precio para variar tamaño y grosos en el span*/
+.precio{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*Separo el top de los dt que uso*/
+.separar{
+    margin-top: 30px;
+
+
+}
